@@ -20,7 +20,7 @@ pillow==10.4.0
 prompt_toolkit==3.0.48
 python-dateutil==2.9.0.post0
 python-pptx==1.0.2
-pywin32==308;sys_platform == "win32"
+pywin32==308
 requests==2.32.3
 six==1.17.0
 sqlparse==0.5.1
@@ -29,4 +29,5 @@ tzdata==2024.2
 urllib3==2.2.3
 vine==5.1.0
 wcwidth==0.2.13
+whitenoise==6.7.0
 XlsxWriter==3.2.0
