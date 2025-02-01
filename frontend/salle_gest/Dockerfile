@@ -1,12 +1,14 @@
 # Utilise une image Python officielle comme base
-FROM python:3.10-slim
+FROM python:3.10  -slim
 
 # Définit le répertoire de travail dans le conteneur
 WORKDIR /gestion
 
 # Copie les fichiers de l'application dans le conteneur
-COPY . /gestion
+COPY . .
+# Installe les outils de dev
 
+RUN apt-get update && apt-get install -y build-essential python3-dev
 # Installe les dépendances nécessaires
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
