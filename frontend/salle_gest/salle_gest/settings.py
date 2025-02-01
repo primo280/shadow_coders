@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-8j(uk14@p@uxyx+1!$h%953nwfqu9gtr@jar!h%)af@skk!j65
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['https://constant-ardenia-wakeupdev-df6e8e99.koyeb.app/']
 
 # Application definition
 
