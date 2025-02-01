@@ -1,5 +1,5 @@
 # Utilise une image Python officielle comme base
-FROM python:3.8-slim
+FROM python:3.10-slim
 
 # Définit le répertoire de travail dans le conteneur
 WORKDIR /gestion
