@@ -1,0 +1,12 @@
+{
+  "name": "gestion",
+  "version": "1.0.0",
+  "description": "API DE GESTION DES SALLE ",
+  "license": "ISC",
+  "author": "DOHA ET AHIFFON",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
