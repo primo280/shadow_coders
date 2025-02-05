@@ -1,13 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -19,10 +14,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+      </head>
+      <body className={`${montserrat.variable} antialiased`}>
         {children}
+        <script src="https://cdn.tailwindcss.com"></script>
       </body>
     </html>
   );
