@@ -1,12 +1,56 @@
+"use client";
+import { motion } from "framer-motion";
+import { CreditCard, Briefcase  } from "lucide-react";
 export default function Hero() {
   return (
-    <div className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4"
-      style={{ backgroundImage: "url('/hero.jpg')" }}>
-      <h1 className="text-4xl md:text-6xl font-bold">Welcome to Our Platform</h1>
-      <p className="mt-4 text-lg md:text-xl">We provide amazing services to help you succeed.</p>
-      <a href="#" className="mt-6 bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">
-        Get Started
-      </a>
-    </div>
+    <motion.div
+      className="h-[400px] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4"
+      style={{ backgroundImage: "url('/hero.jpg')" }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.h1
+        className="text-4xl md:text-6xl font-bold"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        Bienvenue sur notre plateforme
+      </motion.h1>
+
+      <motion.p
+        className="mt-4 text-lg md:text-xl"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.4 }}
+      >
+        Gestion d'emploie de temps et paiement d'actes académiques.
+      </motion.p>
+
+      <motion.div
+        className="mt-6 flex gap-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
+        <motion.a
+  href="/e-paiement"
+  className="flex items-center gap-2 bg-orange-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-500 transition"
+  whileHover={{ scale: 1.1 }}
+  transition={{ type: "spring", stiffness: 300 }}
+>
+  <CreditCard className="w-5 h-5" /> e-paiement
+</motion.a>
+        <motion.a
+    href="/connexion"
+    className="flex items-center gap-2 bg-orange-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-500 transition"
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 300 }}
+  >
+    <Briefcase className="w-5 h-5" /> e-emploie
+  </motion.a>
+      </motion.div>
+    </motion.div>
   );
 }
