@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <motion.div
       className="h-[400px] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
+      style={{ backgroundImage: "url('/hero1.jpg')" }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
