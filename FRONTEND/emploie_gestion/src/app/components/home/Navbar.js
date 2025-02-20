@@ -70,7 +70,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden bg-white shadow-md p-4 space-y-4"
           >
-            {["Home", "Services", "FAQ", "Contact"].map((item, index) => (
+            {[].map((item, index) => (
               <motion.li
                 key={index}
                 whileHover={{ scale: 1.05 }}
