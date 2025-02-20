@@ -15,7 +15,7 @@ export default function Footer() {
 
         {/* Liens de navigation */}
         <ul className="flex space-x-6 text-gray-400">
-          {["Accueil", "Services", "FAQ", "Contact"].map((item, index) => (
+          {[].map((item, index) => (
             <motion.li
               key={index}
               whileHover={{ scale: 1.1 }}
