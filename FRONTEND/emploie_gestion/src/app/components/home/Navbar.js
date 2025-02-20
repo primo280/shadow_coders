@@ -14,7 +14,7 @@ export default function Navbar() {
 
         {/* Menu Desktop */}
         <ul className="hidden md:flex space-x-6">
-          {["Home", "Services", "FAQ", "Contact"].map((item, index) => (
+          {[].map((item, index) => (
             <motion.li
               key={index}
               whileHover={{ scale: 1.1 }}
